@@ -9,7 +9,7 @@ INCLUDES := -I$(OUTPUT)
 CFLAGS := -g -Wall
 ARCH := $(shell uname -m | sed 's/x86_64/x86/')
 
-APPS = minimal bootstrap uprobe hardirqs
+APPS = minimal bootstrap uprobe hardirqs xdp_pass xdp_progs
 
 COMMON_OBJ = $(OUTPUT)/trace_helpers.o
 
